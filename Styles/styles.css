@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap');
+
+/* Estilos generales */
+body {
+	background-color: #ccc;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	font-family: "Dancing Script", cursive;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+section {
+	margin: 20px;
+	padding: 40px;
+	border: 1px solid #ccc;
+	width: calc(100% - 40px);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	max-width: 800px;
+}
+
+section h2 {
+	text-align: center;
+}
+
+
+h1,
+h2 {
+	margin-top: 0;
+}
+
+/* Estilos específicos para las secciones */
+#informacion-clinica,
+#especialidades,
+#contacto,
+#doctores {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+#informacion-clinica h2,
+#especialidades h2,
+#contacto h2,
+#doctores h2 {
+	color: #333;
+}
+
+#general-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#especialidades ul {
+	padding-left: 0;
+}
+
+#especialidades ul li {
+	margin-bottom: 10px;
+}
+
+#doctores img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes show{
+	from{
+		opacity: 0;
+		scale: 20%;
+	}
+	to{
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+img{
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 15% cover 30%;
+	animation-fill-mode: both;
+}
+
+#doctores h3 {
+	margin-top: 25px;
+}
